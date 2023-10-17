@@ -1,0 +1,16 @@
+{
+  "MAIN_CONFIG": {
+    "NAME": "Electronic Medical Records API",
+    "DESCRIPTION": "An API to manage medical records by performing three operations - create, read, list patient records",
+    "API_VERSION": "1.0",
+    "API_VERSION_PATH": "/api/v1",
+    "HOST": "127.0.0.1",
+    "PORT": 8088,
+    "CORS_ORIGIN": ["*"],
+    "CORS_ALLOWED_METHODS": ["*"],
+    "CORS_ALLOWED_HEADERS": ["*"]
+  },
+  "DATABASE_CONFIG": {
+    "SQLALCHEMY_URL": "sqlite:////data/db.sqlite"
+  }
+}

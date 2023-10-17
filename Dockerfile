@@ -1,4 +1,4 @@
-FROM python:3.10.0-slim-buster as base
+FROM python:3.12.0-slim-buster as base
 
 ENV \
   PYTHONFAULTHANDLER=TRUE \

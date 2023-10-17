@@ -7,7 +7,7 @@ The app is a [FastAPI](https://fastapi.tiangolo.com/) app running against an sql
 You have to implement 3 functionalities:
 
 1. Create patient record;
-2. Get a patient record;
+2. Get a patient record- 
 3. List patient records alphabetically by last name and by pages of 10 records at a time;
 
 ## 1. Create patient record
@@ -149,3 +149,6 @@ Your submission will be evaluated according to three categories:
 1. **Developer Experience and Code Quality.**
 2. **Functionality.** Does this application implement the spec and run?
 3. **Tests and Testability.** Is the design testable? Is the core functionality tested?
+
+
+<!-- Add `export PATH="/Users/rahulduttjawalkar/.local/bin:$PATH"` to your shell configuration file. -->

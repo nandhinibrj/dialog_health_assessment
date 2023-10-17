@@ -14,9 +14,11 @@ else:
     logging.basicConfig(level=logging.DEBUG)
 
 target_metadata = declarative_base().metadata
-
+filePath = os.getenv('DATABASE_URI', 'sqlite:///' + os.path.abspath(os.getcwd()) + "data/db.sqlite")
 if config.get_main_option("sqlalchemy.url") is None:
-    config.set_main_option("sqlalchemy.url", os.environ["sqlalchemy_url"])
+    config.set_main_option("sqlalchemy.url", filePath)
+                           # os.environ["sqlalchemy_url"])
+    # "sqlite:///data/db.sqlite"
 
 
 def run_migrations_online():
